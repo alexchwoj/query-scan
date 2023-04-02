@@ -59,6 +59,6 @@ class check(threading.Thread):
 # INIT
 print(f'Checking {args.main_address}...')
 
-for x in range(0, 999):
+for x in range(0, 255):
 	addr = f'{args.main_address}.{x}'
 	check(addr).start()
